@@ -1,0 +1,330 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Damion&family=Prata&family=Roboto+Mono&family=Roboto:wght@300;400;500;700&family=Rubik&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 85px;
+  overflow: hidden;
+  align-items: center;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  height: 85px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+/* "Fotomatic" at the top left*/
+.desktop_logo {
+  display: flex;
+  color: #4a4a4a;
+  font-size: 1.5rem;
+  font-family: 'Roboto Mono', monospace;
+  padding-left: 1.875rem;
+  margin: 0;
+}
+/*Positioning of the list items*/
+.desktop {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1.875rem;
+}
+
+.desktop li {
+  padding-left: 3.5rem;
+}
+
+/*Nav list items within header*/
+.desktop li{
+  display: inline-flex;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/*Instagram logo next to list items*/
+.icon {
+  height: 16px;
+  width: auto;
+  margin: 0;
+}
+
+/*Banner*/
+.banner {
+  display: flex;
+  height: 696px;
+  width: 100%;
+  margin: 0;
+  background-image: url("../images/banner-landingpage.jpg");
+  background-size: cover;
+}
+
+/*All content within the banner*/
+.content_center {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-top: 170px;
+  margin-bottom: 170px;
+  background-color: #9DC20A;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  text-align: center;
+  padding: 0 80px;
+}
+
+.cursive {
+  font-family: "Damion", cursive;
+  color: white;
+  font-size: 50px;
+  margin-top: 32px;
+}
+
+.striking {
+  color: white;
+  font-size: 50px;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.email {
+  color: white;
+  font-size: 20px;
+  font-family: "roboto", sans-serif;
+  line-height: 1.4;
+  margin-top: 12px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.waiting {
+  display: flex;
+  margin-top: 26px;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto Medium", sans-serif;
+  background-color: #4a4a4a;
+  width: 408px;
+  height: 64px;
+  border-radius: 4px;
+  margin-bottom: 56px;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Features Section*/
+#features-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  background-color: #f3f3f3;
+}
+
+.feature {
+  flex: 1;
+  padding: 2rem;
+  margin: 0px 1.25rem;
+  background-color: white;
+}
+
+.feature img {
+  width: 90%;
+  height: 65%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.feature-content {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  text-align: center;
+  align-content: space-evenly;
+  margin-top: 1.25rem;
+  overflow: auto;
+}
+
+.feature-content h3 {
+  display: flex;
+  color: #4A4A4A;
+  font-size: 1rem;
+  font-family: "Roboto Light", sans-serif;
+  line-height: 1.2;
+  justify-self: center;
+}
+
+.feature-content h2 {
+  display: flex;
+  color: #4A4A4A;
+  font-size: 2.25rem;
+  font-family: "Roboto Bold", sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  justify-self: center;
+}
+
+#filters-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #4a4a4a;
+}
+
+.bottom_content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.bottom_content h2 {
+  font-size: 44px;
+  font-family: "Roboto Bold", sans-serif;
+  text-align: center;
+  margin-top: 64px;
+  opacity: 100%;
+  font-weight: bold;
+}
+
+.bottom_content h3 {
+  font-size: 16px;
+  font-family: "Roboto Light", sans-serif;
+  text-align: center;
+  opacity: 100%;
+  line-height: 1.4;
+  margin-bottom: 48px;
+  padding-top: 16px;
+}
+
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin: 0 1%;
+  margin-bottom: 64px;
+}
+
+.images-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#quotes-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f3f3;
+}
+
+.bottom_quote {
+  display: flex;
+  align-items: flex-end;
+}
+
+.quote, .quote-citation {
+  text-align: center;
+  padding: 5rem 0;
+  align-self: center;
+}
+
+.quote {
+  font-family: "Prata", serif;
+  font-size: 1.8remx;
+  line-height: 1.1;
+  color: #4A4A4A;
+  margin-right: 1.875rem;
+}
+
+.quote-citation {
+  transform: translateY(-4px);
+}
+
+footer {
+  height: 3.875rem;
+  background-color: #9B9B9B;
+}
+
+.footer_content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin: 0 2rem;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1600px) {
+  .mobile {
+    display: none;
+  }
+}
